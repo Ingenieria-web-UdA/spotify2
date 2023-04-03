@@ -36,3 +36,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# spotify2
+Uso de nextjs para replicar un clon de spotify.
+
+Se migra todo el html, css y js, a un proyecto de nextjs, usando typescript. 
+El clone de spotify está en figma.
+Esto es replicación de lo que hace el profesor. 
