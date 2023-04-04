@@ -1,6 +1,6 @@
 const SideBar = () => {
   return (
-    <aside className="">
+    <aside>
     <div className="navagation-container">
         <div>
             <svg width="131" height="40" viewBox="0 0 131 40" fill="none" xmlns="http://www.w3.org/2000/svg">

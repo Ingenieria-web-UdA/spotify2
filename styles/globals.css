@@ -44,7 +44,7 @@ header{
     padding: 16px 32px;
 }
 button{
-    background: transparent;
+    background-color: transparent;
     border: none;
     cursor: pointer;
 }
@@ -124,7 +124,7 @@ footer{
     display: flex;
     gap: 24px;
     width: 80vw;
-    overflow-x: scroll; /*si los elementos se salen de ese ancho le ponemos un scroll*/
+    overflow-x: auto; /*si los elementos se salen de ese ancho le ponemos un scroll*/
 }
 
 .card{

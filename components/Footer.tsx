@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer>
-        <a href="/santiago/">Link a carpeta Santiago</a>
+        <Link href="/santiago/">Link a Santiago</Link>
         <div>
             <span>Company</span>
             <span>Communities</span>
