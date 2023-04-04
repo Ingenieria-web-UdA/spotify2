@@ -1,13 +1,40 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { PlaylistCard } from "@/components/PlaylistCard";
+import { Layout } from "@/layouts/Layout";
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const IndexPage = () =>{
   return (
-   <main>
-      Hola mundo
-   </main>
-  )
-}
+    <Layout>
+    <section className="main-content">
+        <div className="playlist-section">
+            <div className="playlist-section-header">
+                <h1>Focus</h1>
+                <span>Show all</span>
+            </div>
+            <div className="playlist-section-container">
+                <PlaylistCard 
+                image='media/peaceful-piano.png'
+                name='Peaceful Piano'
+                description='Relax and indulge with beautiful piano pieces'
+                />
+            </div>
+        </div>
+        <div className="playlist-section">
+            <div className="playlist-section-header">
+                <h1>Spotify Playlists</h1>
+                <span>Show all</span>
+            </div>
+            <div className="playlist-section-container">
+                <PlaylistCard 
+                image='media/peaceful-piano.png'
+                name='Peaceful Piano'
+                description='Relax and indulge with beautiful piano pieces'
+                 />
+            </div>
+        </div>
+
+    </section>
+    </Layout>
+  );
+};
+
+export default IndexPage;

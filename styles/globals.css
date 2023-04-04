@@ -1,1 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/*a cualquier elemento que vaya a poner en la pagina, pongale esto por defecto (quitar todos los margenes y padding)*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Roboto, 'sans-serif';
+}
+
+.debug{
+    border: 1px solid red;
+}
+.main-container{
+    display: flex;
+    height: 100vh;          /*medida relativa*/
+    width: 100vw;
+}
+/*aside tiene dos hijos-> dos divs*/
+aside{
+    width: 241px;
+    background-color: black;
+    display: flex;          /*poner los dos hijos uno al lado del otro*/
+    flex-direction: column; /*que la direccion sea de tipo columna*/
+    justify-content: space-between; /*y le ponemos un espacio en la mitad*/
+    padding: 24px;
+}
+main{
+    width: 100%;        /*asume el 100% del espacio que tenga disponible*/
+    background-color: #292929;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 64px;
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.2);
+}
+.navigation-buttons{
+    display: flex;
+    gap: 16px;
+}
+/*grid que tiene 2 filas y cada fila ocupa el 50%*/
+.main-content{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    padding: 32px;
+}
+.auth{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.sign-up{
+    color: #a7a7a7;
+    font-weight: bold;
+    font-size: 15px;
+}
+.log-in{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 32.375px 15px 32px;
+    width: 109.38px;
+    height: 48px;
+    background: #FFFFFF;
+    border-radius: 500px;
+}
+.log-in > span {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+} 
+footer{
+    height: 104px;
+    background-color: #121212;
+}
+.navagation-container{
+    display: flex;          /*tengo tres divs dentro de un div papá*/
+    flex-direction: column; 
+    gap: 25px;              /*se separan 25 px uno del otro*/
+}
+.icon-link{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding: 8px 0px;       /*para que se separen entre ellos 8px vertical y 0px horizontalmente*/
+}
+
+.playlist-section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.playlist-section-header{
+    display: flex;
+    justify-content: space-between;
+}
+.playlist-section-header> h1 {
+    font-size: 20px;
+    font-weight: 900;
+}
+.playlist-section-header > span {
+    color: #B3B3B3;
+    font-size: 13px;
+}
+.playlist-section-container{
+    display: flex;
+    gap: 24px;
+    width: 80vw;
+    overflow-x: scroll; /*si los elementos se salen de ese ancho le ponemos un scroll*/
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 16px;
+    background-color: #191919;
+    border-radius: 6px;
+    width: 181px;
+}
+.card-title{
+    font-size: 15px;
+    font-weight: 900;
+}
+.card-description{
+    font-size: 13px;
+    color: #a7a7a7;
+}
